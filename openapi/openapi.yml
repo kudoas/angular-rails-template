@@ -1,0 +1,27 @@
+openapi: "3.0.0"
+servers:
+  - url: "http://127.0.0.1:8080"
+    description: API Stub servers
+info:
+  version: 1.0.0
+  title: Manyou App API
+  description: A short description of Manyou App API.
+paths:
+  /ping:
+    get:
+      tags:
+        - ping
+      summary: "Testing API"
+      description: ""
+      responses:
+        200:
+          description: "success response"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: "string"
+                    example: "ping"
+                  
