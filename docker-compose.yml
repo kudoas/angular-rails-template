@@ -2,7 +2,8 @@ version: "3"
 
 services:
   db:
-    image: mysql:8.0
+    platform: linux/x86_64
+    image: mysql/mysql-server:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: app_db
